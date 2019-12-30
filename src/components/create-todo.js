@@ -52,8 +52,26 @@ export default class CreateTodo extends Component {
 
     render() {
         return (
-            <div>
-                <p>Welcome to Create Todo Component!!</p>
+            <div style={{marginTop: 10}}>
+                <h3>Create New Todo</h3>
+                <form onSubmit={this.onSubmit}>
+                    <div className="form-group">
+                        <label>Description</label>
+                        <input  type="text"
+                                className="form-control"
+                                value={this.state.todo_description}
+                                onChange={this.onChangeTodoDescription}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Responsible: </label>
+                        <input  type="text"
+                                className="form-control"
+                                value={this.state.todo_responsible}
+                                onChange={this.onChangeTodoResponsible}
+                        />
+                    </div>
+                </form>
             </div>
         )
     }
