@@ -71,6 +71,11 @@ export default class CreateTodo extends Component {
                                 onChange={this.onChangeTodoResponsible}
                         />
                     </div>
+                    <div className="form-group">
+                        <div className="form-check form-check-inline">
+
+                        </div>
+                    </div>
                 </form>
             </div>
         )
